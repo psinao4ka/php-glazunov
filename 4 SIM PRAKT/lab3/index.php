@@ -15,20 +15,11 @@
 </body>
 </html>
 <?php
-if (isset($_GET['никита'])){
-// var_dump($_GET['никита']);
-
-$ultrakill=explode(' ',$_GET['никита']);
-UnFunc($ultrakill);
-
-echo implode(' ', $ultrakill);
-
-}
-function UnFunc(&$ultrakill){
-for ($i=0;$i<count($ultrakill);$i++){
-    if(($i % 2)>0){
-        $ultrakill [$i] = strtoupper($ultrakill[$i]);
-    }
-}
-
+ $XVI=" Иван Васильевич"; 
+ $XVIII=" Пётр Алексеевич"; 
+ $XIX=" Николай Павлович";
+ 
+if (isset($_GET['никита'])) {
+$vek=$_GET['никита'];
+ echo 'в '. $vek .' царствовал '. $$vek ; 
 }
